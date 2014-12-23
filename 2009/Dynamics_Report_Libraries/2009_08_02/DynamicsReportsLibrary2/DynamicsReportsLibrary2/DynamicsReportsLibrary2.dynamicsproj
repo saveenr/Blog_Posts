@@ -1,0 +1,51 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>5.0.593.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7fe73b17-ef7d-4b6a-a396-efb0ded704fa}</ProjectGuid>
+    <Name>DynamicsReportsLibrary2</Name>
+    <BaseAssemblyName>DynamicsReportsLibrary2</BaseAssemblyName>
+    <!-- Application property page properties -->
+    <OutputType>Dynamics Reporting Library</OutputType>
+    <!-- AssemblyInfo properties -->
+    <AssemblyTitle>DynamicsReportsLibrary2</AssemblyTitle>
+    <AssemblyCompany>MSIT</AssemblyCompany>
+    <AssemblyProduct>DynamicsReportsLibrary2</AssemblyProduct>
+    <AssemblyCopyright>Copyright © MSIT 2009</AssemblyCopyright>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>bin\Debug\</OutputPath>
+    <RootNamespace>DynamicsReportsLibrary2</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <CompileModel Include="Report1.moxl" />
+  </ItemGroup>
+  <ItemGroup>
+    <SubProject Include="BusinessLogic\BusinessLogic.csproj">
+      <TypeGuid>{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}</TypeGuid>
+      <Template>Dynamics\BusinessLogic</Template>
+      <InstanceGuid>{92f77042-c163-4f6a-ba85-e2419943ed0e}</InstanceGuid>
+    </SubProject>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.resx">
+      <DependentUpon>Report1.moxl</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharedLibrary\SharedLibrary.dynamicsproj">
+      <Name>SharedLibrary</Name>
+      <Project>{49ce8a77-e4d9-4a9a-b163-0fb281a584bf}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\DynamicsTools\Microsoft.Dynamics.Framework.Design.Reporting.Modeling.targets" />
+</Project>

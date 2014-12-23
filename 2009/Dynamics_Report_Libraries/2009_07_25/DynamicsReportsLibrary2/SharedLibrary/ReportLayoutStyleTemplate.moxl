@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reports Version="1.0.0.0">
+  <LayoutTemplate Name="ReportLayoutStyleTemplate">
+    <SectionStyle Name="BodySectionStyle">
+      <BorderColor Name="BorderColor" Default="Black"/>
+      <BorderStyle Name="BorderStyle" Default="None"/>
+      <BorderWidth Name="BorderWidth" Default="1pt"/>
+    </SectionStyle>
+    <FooterTemplate Name="FooterTemplate">
+      <FooterTemplate.DateTime>
+        <UnformattedItem Name="DateTime">
+          <CellStyle Name="Style">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontSize="8pt" FontWeight="Bold"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </UnformattedItem>
+      </FooterTemplate.DateTime>
+      <FooterTemplate.UserId>
+        <UnformattedItem Name="UserId">
+          <CellStyle Name="Style">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontSize="8pt" FontWeight="Bold"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </UnformattedItem>
+      </FooterTemplate.UserId>
+      <UnformattedItem Name="PageNumber">
+        <CellStyle Name="Style">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontSize="8pt" FontWeight="Bold"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+      </UnformattedItem>
+      <SeparatorLine Name="SeparatorLine">
+        <LineStyle Name="LineStyle" Color="Black"/>
+      </SeparatorLine>
+    </FooterTemplate>
+    <HeaderTemplate Name="HeaderTemplate">
+      <CompanyName Name="CompanyName" Visible="True">
+        <CellStyle Name="Style">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+      </CompanyName>
+      <HeaderTemplate.DateTime>
+        <UnformattedItem Name="DateTime" Visible="True">
+          <CellStyle Name="Style">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </UnformattedItem>
+      </HeaderTemplate.DateTime>
+      <HeaderTemplate.ReportTitle>
+        <UnformattedItem Name="ReportTitle" Visible="True">
+          <CellStyle Name="Style">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="14pt" FontWeight="Bold"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </UnformattedItem>
+      </HeaderTemplate.ReportTitle>
+      <UnformattedItem Name="PageNumber" Visible="True">
+        <CellStyle Name="Style">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+      </UnformattedItem>
+      <SeparatorLine Name="SeparatorLine" Visible="True">
+        <LineStyle Name="LineStyle" Color="#165ba6" Width="0.025in"/>
+      </SeparatorLine>
+    </HeaderTemplate>
+    <LayoutTemplate.FooterSectionStyle>
+      <SectionStyle Name="FooterSectionStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+      </SectionStyle>
+    </LayoutTemplate.FooterSectionStyle>
+    <LayoutTemplate.PageHeaderSectionStyle>
+      <SectionStyle Name="PageHeaderSectionStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+      </SectionStyle>
+    </LayoutTemplate.PageHeaderSectionStyle>
+    <RowStyle Name="ParameterRowStyle">
+      <CellStyle Name="FieldCaptionStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+        <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontStyle="Italic" FontWeight="Bold"/>
+        <Padding Name="Padding"/>
+      </CellStyle>
+      <RowStyle.FieldValueStyle>
+        <CellStyle Name="FieldValueStyle">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+      </RowStyle.FieldValueStyle>
+    </RowStyle>
+  </LayoutTemplate>
+</Reports>

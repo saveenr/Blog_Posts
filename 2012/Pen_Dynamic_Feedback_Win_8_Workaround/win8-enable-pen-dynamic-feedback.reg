@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\TabletPC] 
+"TurnOffPenFeedback"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\TabletPC] 
+"TurnOffPenFeedback"=dword:00000000 
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"ContactVisualization"=dword:00000001 
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"GestureVisualization"=dword:0000001f 

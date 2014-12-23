@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reports Version="1.0.0.0">
+  <MatrixStyleTemplate Name="MatrixStyleTemplate">
+    <CellStyle Name="ColumnGrouping1CaptionStyle">
+      <BorderColor Name="BorderColor" Default="Black"/>
+      <BorderStyle Name="BorderStyle" Default="None"/>
+      <BorderWidth Name="BorderWidth" Default="1pt"/>
+      <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+      <Padding Name="Padding"/>
+    </CellStyle>
+    <SectionStyle Name="MatrixSectionStyle">
+      <BorderColor Name="BorderColor" Default="Black"/>
+      <BorderStyle Name="BorderStyle" Default="None"/>
+      <BorderWidth Name="BorderWidth" Default="1pt"/>
+    </SectionStyle>
+    <MatrixStyleTemplate.ColumnGrouping2CaptionStyle>
+      <CellStyle Name="ColumnGrouping2CaptionStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+        <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+        <Padding Name="Padding"/>
+      </CellStyle>
+    </MatrixStyleTemplate.ColumnGrouping2CaptionStyle>
+    <MatrixStyleTemplate.ColumnGrouping3CaptionStyle>
+      <CellStyle Name="ColumnGrouping3CaptionStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+        <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+        <Padding Name="Padding"/>
+      </CellStyle>
+    </MatrixStyleTemplate.ColumnGrouping3CaptionStyle>
+    <MatrixStyleTemplate.DataStyle>
+      <RowStyle Name="DataStyle">
+        <CellStyle Name="FieldCaptionStyle">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+        <RowStyle.FieldValueStyle>
+          <CellStyle Name="FieldValueStyle">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </RowStyle.FieldValueStyle>
+      </RowStyle>
+    </MatrixStyleTemplate.DataStyle>
+    <MatrixStyleTemplate.RowGrouping1Style>
+      <RowStyle Name="RowGrouping1Style">
+        <CellStyle Name="FieldCaptionStyle">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+        <RowStyle.FieldValueStyle>
+          <CellStyle Name="FieldValueStyle">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </RowStyle.FieldValueStyle>
+      </RowStyle>
+    </MatrixStyleTemplate.RowGrouping1Style>
+    <MatrixStyleTemplate.RowGrouping3Style>
+      <RowStyle Name="RowGrouping3Style">
+        <CellStyle Name="FieldCaptionStyle">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+        <RowStyle.FieldValueStyle>
+          <CellStyle Name="FieldValueStyle">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </RowStyle.FieldValueStyle>
+      </RowStyle>
+    </MatrixStyleTemplate.RowGrouping3Style>
+    <MatrixStyleTemplate.TitleStyle>
+      <CellStyle Name="TitleStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+        <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+        <Padding Name="Padding"/>
+      </CellStyle>
+    </MatrixStyleTemplate.TitleStyle>
+    <RowStyle Name="RowGrouping2Style">
+      <CellStyle Name="FieldCaptionStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+        <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+        <Padding Name="Padding"/>
+      </CellStyle>
+      <RowStyle.FieldValueStyle>
+        <CellStyle Name="FieldValueStyle">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+      </RowStyle.FieldValueStyle>
+    </RowStyle>
+    <Spacing Name="Spacing"/>
+  </MatrixStyleTemplate>
+</Reports>

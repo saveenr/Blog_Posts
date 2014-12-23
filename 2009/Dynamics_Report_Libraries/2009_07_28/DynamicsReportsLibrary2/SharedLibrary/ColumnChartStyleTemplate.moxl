@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reports Version="1.0.0.0">
+  <XYChartStyleTemplate Name="ColumnChartStyleTemplate" Palette="Pastel">
+    <ChartAreaStyle Name="ChartAreaStyle" BackgroundColor="White">
+      <LineStyle Name="BorderStyle" Style="None"/>
+    </ChartAreaStyle>
+    <DataSeriesStyling Name="DataSeriesStyling">
+      <ChartAreaStyle Name="FillStyle">
+        <LineStyle Name="BorderStyle"/>
+      </ChartAreaStyle>
+      <LineStyle Name="LineStyle"/>
+    </DataSeriesStyling>
+    <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White" Layout="Columns" Position="RightCenter">
+      <LineStyle Name="BorderStyle" Style="None"/>
+      <Font Name="FontStyle" FontFamily="Tahoma" FontSize="8pt"/>
+    </LegendStyleTemplate>
+    <PointLabelStyling Name="PointLabelStyling">
+      <Font Name="LabelStyle" FontFamily="Tahoma" FontSize="8pt"/>
+    </PointLabelStyling>
+    <ThreeDStyling Name="ThreeDStyling"/>
+    <Font Name="TitleStyle" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+    <AxisStyle Name="XAxisStyle" SideMargins="True">
+      <AxisStyle.LabelsFontStyle>
+        <Font Name="LabelsFontStyle" FontFamily="Tahoma" FontSize="8pt"/>
+      </AxisStyle.LabelsFontStyle>
+      <AxisStyle.MinorGridLineStyle>
+        <LineStyle Name="MinorGridLineStyle"/>
+      </AxisStyle.MinorGridLineStyle>
+      <LineStyle Name="MajorGridLineStyle" Color="DarkGray"/>
+      <Font Name="TitleFontStyle" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+    </AxisStyle>
+    <XYChartStyleTemplate.PlotAreaStyle>
+      <ChartAreaStyle Name="PlotAreaStyle" BackgroundColor="White">
+        <LineStyle Name="BorderStyle" Color="DarkGray"/>
+      </ChartAreaStyle>
+    </XYChartStyleTemplate.PlotAreaStyle>
+    <XYChartStyleTemplate.YAxisStyle>
+      <AxisStyle Name="YAxisStyle" MajorTickMark="None" ShowMajorGridLines="True" SideMargins="True">
+        <AxisStyle.LabelsFontStyle>
+          <Font Name="LabelsFontStyle" FontFamily="Tahoma" FontSize="8pt"/>
+        </AxisStyle.LabelsFontStyle>
+        <AxisStyle.MinorGridLineStyle>
+          <LineStyle Name="MinorGridLineStyle"/>
+        </AxisStyle.MinorGridLineStyle>
+        <LineStyle Name="MajorGridLineStyle" Color="DarkGray"/>
+        <Font Name="TitleFontStyle" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+      </AxisStyle>
+    </XYChartStyleTemplate.YAxisStyle>
+  </XYChartStyleTemplate>
+  <XYChartStyleTemplate Name="ColumnChartStyleTemplateCC" Palette="Pastel">
+    <ChartAreaStyle Name="ChartAreaStyle" BackgroundColor="White">
+      <LineStyle Name="BorderStyle" Style="None"/>
+    </ChartAreaStyle>
+    <DataSeriesStyling Name="DataSeriesStyling">
+      <ChartAreaStyle Name="FillStyle" BackgroundColor="#BCD089" BackgroundGradientColor="#79A113" BackgroundGradientType="TopBottom">
+        <LineStyle Name="BorderStyle"/>
+      </ChartAreaStyle>
+      <LineStyle Name="LineStyle"/>
+    </DataSeriesStyling>
+    <CellStyle Name="FooterStyle">
+      <BorderColor Name="BorderColor" Default="Black"/>
+      <BorderStyle Name="BorderStyle" Default="None"/>
+      <BorderWidth Name="BorderWidth" Default="1pt"/>
+      <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+      <Padding Name="Padding"/>
+    </CellStyle>
+    <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White" Layout="Columns" Position="RightCenter">
+      <LineStyle Name="BorderStyle" Style="None"/>
+      <Font Name="FontStyle" FontFamily="Tahoma" FontSize="8pt"/>
+    </LegendStyleTemplate>
+    <PointLabelStyling Name="PointLabelStyling">
+      <Font Name="LabelStyle" FontFamily="Tahoma" FontSize="8pt"/>
+    </PointLabelStyling>
+    <ThreeDStyling Name="ThreeDStyling"/>
+    <Font Name="TitleStyle" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+    <AxisStyle Name="XAxisStyle" SideMargins="True">
+      <AxisStyle.LabelsFontStyle>
+        <Font Name="LabelsFontStyle" FontFamily="Tahoma" FontSize="8pt"/>
+      </AxisStyle.LabelsFontStyle>
+      <AxisStyle.MinorGridLineStyle>
+        <LineStyle Name="MinorGridLineStyle"/>
+      </AxisStyle.MinorGridLineStyle>
+      <LineStyle Name="MajorGridLineStyle" Color="DarkGray"/>
+      <Font Name="TitleFontStyle" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+    </AxisStyle>
+    <XYChartStyleTemplate.PlotAreaStyle>
+      <ChartAreaStyle Name="PlotAreaStyle" BackgroundColor="White">
+        <LineStyle Name="BorderStyle" Color="DarkGray"/>
+      </ChartAreaStyle>
+    </XYChartStyleTemplate.PlotAreaStyle>
+    <XYChartStyleTemplate.YAxisStyle>
+      <AxisStyle Name="YAxisStyle" MajorTickMark="None" ShowMajorGridLines="True" SideMargins="True">
+        <AxisStyle.LabelsFontStyle>
+          <Font Name="LabelsFontStyle" FontFamily="Tahoma" FontSize="8pt"/>
+        </AxisStyle.LabelsFontStyle>
+        <AxisStyle.MinorGridLineStyle>
+          <LineStyle Name="MinorGridLineStyle"/>
+        </AxisStyle.MinorGridLineStyle>
+        <LineStyle Name="MajorGridLineStyle" Color="DarkGray"/>
+        <Font Name="TitleFontStyle" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+      </AxisStyle>
+    </XYChartStyleTemplate.YAxisStyle>
+  </XYChartStyleTemplate>
+</Reports>

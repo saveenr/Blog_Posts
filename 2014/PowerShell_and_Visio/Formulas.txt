@@ -1,0 +1,11 @@
+// Height from Width
+=Width
+=GUARD(Width)
+
+// Hue from Width
+=HSL(Width*64,240,100)
+=GUARD(HSL(Width*64,240,100))
+
+// Hue from Angle
+=HSL(Angle*64,240,100)
+=GUARD(=HSL(Angle*64,240,100))

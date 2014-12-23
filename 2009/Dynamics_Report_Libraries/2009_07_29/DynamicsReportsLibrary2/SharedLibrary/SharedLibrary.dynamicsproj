@@ -1,0 +1,51 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>5.0.323.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49ce8a77-e4d9-4a9a-b163-0fb281a584bf}</ProjectGuid>
+    <Name>SharedLibrary</Name>
+    <BaseAssemblyName>SharedLibrary</BaseAssemblyName>
+    <!-- Application property page properties -->
+    <OutputType>Dynamics Reporting Library</OutputType>
+    <!-- AssemblyInfo properties -->
+    <AssemblyTitle>SharedLibrary</AssemblyTitle>
+    <AssemblyCompany>MSIT</AssemblyCompany>
+    <AssemblyProduct>SharedLibrary</AssemblyProduct>
+    <AssemblyCopyright>Copyright © MSIT 2007</AssemblyCopyright>
+    <!-- Until we do not have proper support for issuing the first Compile target build form the OnAfterOpenSolution we need a default OutputPath  -->
+    <OutputPath>bin\Debug\</OutputPath>
+    <RootNamespace>SharedLibrary</RootNamespace>
+    <DebugExePath>C:\Program Files\Microsoft Dynamics AX\5.0\Client\Bin\Ax32.exe</DebugExePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <SubProject Include="BusinessLogic\BusinessLogic.csproj">
+      <TypeGuid>{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}</TypeGuid>
+      <Template>Dynamics\BusinessLogic</Template>
+      <InstanceGuid>{ab463e55-f112-4235-813a-c949b765b1c4}</InstanceGuid>
+    </SubProject>
+  </ItemGroup>
+  <ItemGroup>
+    <CompileModel Include="BarChartStyleTemplate.moxl" />
+    <CompileModel Include="ColumnChartStyleTemplate.moxl" />
+    <CompileModel Include="DynamicsAXOLAP.moxl" />
+    <CompileModel Include="LineChartStyleTemplate.moxl" />
+    <CompileModel Include="ListStyleTemplate.moxl" />
+    <CompileModel Include="MatrixStyleTemplate.moxl" />
+    <CompileModel Include="PieAndDoughnutChartStyleTemplate.moxl" />
+    <CompileModel Include="ReportLayoutStyleTemplate.moxl" />
+    <CompileModel Include="ReportLayoutStyleTemplateNoCompany.moxl" />
+    <CompileModel Include="RoleCenterReportLayoutStyleTemplate.moxl" />
+    <CompileModel Include="TableStyleTemplate.moxl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\DynamicsTools\Microsoft.Dynamics.Framework.Design.Reporting.Modeling.targets" />
+</Project>

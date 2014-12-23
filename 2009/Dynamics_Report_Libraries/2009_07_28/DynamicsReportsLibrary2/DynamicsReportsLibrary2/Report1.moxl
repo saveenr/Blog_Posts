@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reports Version="1.0.0.0">
+  <Report Name="Report1">
+    <DataMethod Name="DataMethod_Ages2" ReturnType="System.Data.DataTable"/>
+    <DataMethod Name="DataMethod_Ages3" ReturnType="System.Data.DataTable"/>
+    <DataMethod Name="DataMethod_Ages_and_Weights" ReturnType="System.Data.DataTable"/>
+    <DataSet Name="Dataset_Ages2" DataSourceType="BusinessLogic" Query="DataMethod_Ages2">
+      <DataSetField Name="Name" Alias="Name" Caption="Report1_Dataset_Ages_Name" UserDefined="False"/>
+      <DataSetField Name="Age" Alias="Age" Caption="Report1_Dataset_Ages_Age" DataType="System.Int32" UserDefined="False"/>
+      <DataSetParameter Name="AX_CompanyName" Alias="AX_CompanyName" DataType="System.String" Parameter="AX_CompanyName(Parameters)"/>
+    </DataSet>
+    <DataSet Name="Dataset_Ages3" DataSourceType="BusinessLogic" Query="DataMethod_Ages3">
+      <DataSetField Name="Name" Alias="Name" Caption="Report1_Dataset_Ages3_Name" UserDefined="False"/>
+      <DataSetField Name="Age" Alias="Age" Caption="Report1_Dataset_Ages3_Age" DataType="System.Int32" UserDefined="False"/>
+      <DataSetParameter Name="AX_CompanyName" Alias="AX_CompanyName" DataType="System.String" Parameter="AX_CompanyName(Parameters)"/>
+    </DataSet>
+    <DataSet Name="DataSet_Age_and_Weight" DataSourceType="BusinessLogic" DefaultLayout="DoughnutChart" Query="DataMethod_Ages_and_Weights">
+      <DataSetField Name="Name" Alias="Name" Caption="Report1_DataSet_Age_and_Weight_Name" UserDefined="False"/>
+      <DataSetField Name="Age" Alias="Age" Caption="Report1_DataSet_Age_and_Weight_Age" DataType="System.Int32" UserDefined="False"/>
+      <DataSetField Name="Weight" Alias="Weight" Caption="Report1_DataSet_Age_and_Weight_Weight" DataType="System.Int32" UserDefined="False"/>
+      <DataSetParameter Name="AX_CompanyName" Alias="AX_CompanyName" DataType="System.String" Parameter="AX_CompanyName(Parameters)"/>
+    </DataSet>
+    <AutoDesign Name="AutoDesign_Ages2" LayoutTemplate=":ReportLayoutStyleTemplate">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <Table Name="Dataset_Ages2Table" DataSet="Dataset_Ages2(DataSets)" StyleTemplate=":TableStyleTemplate" Title="Dataset_Ages2">
+        <TableData Name="Data">
+          <TableDetailData Name="Name" Caption="=Labels!Report1_Dataset_Ages_Name" Expression="=Fields!Name.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+          <TableDetailData Name="Age" Caption="=Labels!Report1_Dataset_Ages_Age" Expression="=Fields!Age.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+        </TableData>
+      </Table>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_Ages3" LayoutTemplate=":ReportLayoutStyleTemplate">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <Table Name="Dataset_Ages3Table" DataSet="Dataset_Ages3(DataSets)" StyleTemplate=":TableStyleTemplate" Title="Dataset_Ages3">
+        <TableData Name="Data">
+          <TableDetailData Name="Name" Caption="=Labels!Report1_Dataset_Ages3_Name" Expression="=Fields!Name.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+          <TableDetailData Name="Age" Caption="=Labels!Report1_Dataset_Ages3_Age" Expression="=Fields!Age.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+        </TableData>
+      </Table>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign1_Ages_and_Weights" LayoutTemplate=":ReportLayoutStyleTemplate">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <Table Name="DataSet_Age_and_WeightTable" DataSet="DataSet_Age_and_Weight(DataSets)" StyleTemplate=":TableStyleTemplate" Title="DataSet_Age_and_Weight">
+        <TableData Name="Data">
+          <TableDetailData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+          <TableDetailData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+          <TableDetailData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+        </TableData>
+      </Table>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_Table" LayoutTemplate=":ReportLayoutStyleTemplate">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <Table Name="DataSet_Age_and_WeightTable" DataSet="DataSet_Age_and_Weight(DataSets)" StyleTemplate=":TableStyleTemplate" Title="DataSet_Age_and_Weight">
+        <TableData Name="Data">
+          <TableDetailData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+          <TableDetailData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+          <TableDetailData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+        </TableData>
+      </Table>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_TopDownList" LayoutTemplate=":ReportLayoutStyleTemplate">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <List Name="DataSet_Age_and_WeightList" DataSet="DataSet_Age_and_Weight(DataSets)" StyleTemplate=":ListStyleTemplate" Title="DataSet_Age_and_Weight">
+        <ListData Name="Data">
+          <ListFieldData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </ListFieldData>
+          <ListFieldData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </ListFieldData>
+          <ListFieldData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </ListFieldData>
+        </ListData>
+      </List>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_HorizontalList" LayoutTemplate=":ReportLayoutStyleTemplate">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <List Name="DataSet_Age_and_WeightList" DataSet="DataSet_Age_and_Weight(DataSets)" FieldLayout="Horizontal" StyleTemplate=":ListStyleTemplate" Title="DataSet_Age_and_Weight">
+        <ListData Name="Data">
+          <ListFieldData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </ListFieldData>
+          <ListFieldData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </ListFieldData>
+          <ListFieldData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </ListFieldData>
+        </ListData>
+      </List>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_Matrix">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <Matrix Name="DataSet_Age_and_WeightMatrix" DataSet="DataSet_Age_and_Weight(DataSets)" Title="DataSet_Age_and_Weight">
+        <MatrixData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value">
+          <Padding Name="Padding"/>
+        </MatrixData>
+        <MatrixData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value">
+          <Padding Name="Padding"/>
+        </MatrixData>
+        <MatrixData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value">
+          <Padding Name="Padding"/>
+        </MatrixData>
+      </Matrix>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_ColumnChart">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <XYChart Name="DataSet_Age_and_WeightXYChart" DataSet="DataSet_Age_and_Weight(DataSets)" Title="DataSet_Age_and_Weight">
+        <ChartData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Name" PointLabel="=Fields!Name.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Age" PointLabel="=Fields!Age.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Weight" PointLabel="=Fields!Weight.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White">
+          <LineStyle Name="BorderStyle" Color="Black"/>
+          <Font Name="FontStyle" FontSize="8pt"/>
+        </LegendStyleTemplate>
+        <Size Name="Size" Height="5in" Width="7in"/>
+        <ThreeDStyling Name="ThreeDStyling"/>
+      </XYChart>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_BarChart">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <XYChart Name="DataSet_Age_and_WeightXYChart" ChartType="Bar" DataSet="DataSet_Age_and_Weight(DataSets)" Title="DataSet_Age_and_Weight">
+        <ChartData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Name" PointLabel="=Fields!Name.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Age" PointLabel="=Fields!Age.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Weight" PointLabel="=Fields!Weight.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White">
+          <LineStyle Name="BorderStyle" Color="Black"/>
+          <Font Name="FontStyle" FontSize="8pt"/>
+        </LegendStyleTemplate>
+        <Size Name="Size" Height="5in" Width="7in"/>
+        <ThreeDStyling Name="ThreeDStyling"/>
+      </XYChart>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_LineChart">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <XYChart Name="DataSet_Age_and_WeightXYChart" ChartType="Line" DataSet="DataSet_Age_and_Weight(DataSets)" Title="DataSet_Age_and_Weight">
+        <ChartData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Name" PointLabel="=Fields!Name.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Age" PointLabel="=Fields!Age.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Weight" PointLabel="=Fields!Weight.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White">
+          <LineStyle Name="BorderStyle" Color="Black"/>
+          <Font Name="FontStyle" FontSize="8pt"/>
+        </LegendStyleTemplate>
+        <Size Name="Size" Height="5in" Width="7in"/>
+        <ThreeDStyling Name="ThreeDStyling"/>
+      </XYChart>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_PieChart">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <PieDoughnutChart Name="DataSet_Age_and_WeightPieorDoughnutChart" DataSet="DataSet_Age_and_Weight(DataSets)" Title="DataSet_Age_and_Weight">
+        <ChartData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Name" PointLabel="=Fields!Name.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Age" PointLabel="=Fields!Age.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Weight" PointLabel="=Fields!Weight.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White">
+          <LineStyle Name="BorderStyle" Color="Black"/>
+          <Font Name="FontStyle" FontSize="8pt"/>
+        </LegendStyleTemplate>
+        <Size Name="Size" Height="5in" Width="7in"/>
+        <ThreeDStyling Name="ThreeDStyling"/>
+      </PieDoughnutChart>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign_DoughNutChart">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <PieDoughnutChart Name="DataSet_Age_and_WeightPieorDoughnutChart" ChartType="Doughnut" DataSet="DataSet_Age_and_Weight(DataSets)" Title="DataSet_Age_and_Weight">
+        <ChartData Name="Name" Caption="=Labels!Report1_DataSet_Age_and_Weight_Name" Expression="=Fields!Name.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Name" PointLabel="=Fields!Name.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Age" Caption="=Labels!Report1_DataSet_Age_and_Weight_Age" Expression="=Fields!Age.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Age" PointLabel="=Fields!Age.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <ChartData Name="Weight" Caption="=Labels!Report1_DataSet_Age_and_Weight_Weight" Expression="=Fields!Weight.Value" Label="=Labels!Report1_DataSet_Age_and_Weight_Weight" PointLabel="=Fields!Weight.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White">
+          <LineStyle Name="BorderStyle" Color="Black"/>
+          <Font Name="FontStyle" FontSize="8pt"/>
+        </LegendStyleTemplate>
+        <Size Name="Size" Height="5in" Width="7in"/>
+        <ThreeDStyling Name="ThreeDStyling"/>
+      </PieDoughnutChart>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <Parameter Name="AX_CompanyName" UserVisibility="Hidden"/>
+  </Report>
+</Reports>

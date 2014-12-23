@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reports Version="1.0.0.0">
+  <ListStyleTemplate Name="ListStyleTemplate">
+    <ListDataSectionStyleTemplate Name="DataSectionStyle" BackgroundColor="White">
+      <RowStyle Name="DetailRowStyle">
+        <CellStyle Name="FieldCaptionStyle">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+        <RowStyle.FieldValueStyle>
+          <CellStyle Name="FieldValueStyle">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </RowStyle.FieldValueStyle>
+      </RowStyle>
+      <ListDataSectionStyleTemplate.GroupLevel1FooterAggregateStyle>
+        <RowStyle Name="GroupLevel1FooterAggregateStyle">
+          <CellStyle Name="FieldCaptionStyle">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None" Top="Solid"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+          <RowStyle.FieldValueStyle>
+            <CellStyle Name="FieldValueStyle">
+              <BorderColor Name="BorderColor" Default="Black"/>
+              <BorderStyle Name="BorderStyle" Default="None" Top="Solid"/>
+              <BorderWidth Name="BorderWidth" Default="1pt"/>
+              <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+              <Padding Name="Padding"/>
+            </CellStyle>
+          </RowStyle.FieldValueStyle>
+        </RowStyle>
+      </ListDataSectionStyleTemplate.GroupLevel1FooterAggregateStyle>
+      <ListDataSectionStyleTemplate.GroupLevel2FooterAggregateStyle>
+        <RowStyle Name="GroupLevel2FooterAggregateStyle">
+          <CellStyle Name="FieldCaptionStyle">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None" Top="Solid"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+          <RowStyle.FieldValueStyle>
+            <CellStyle Name="FieldValueStyle">
+              <BorderColor Name="BorderColor" Default="Black"/>
+              <BorderStyle Name="BorderStyle" Default="None" Top="Solid"/>
+              <BorderWidth Name="BorderWidth" Default="1pt"/>
+              <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+              <Padding Name="Padding"/>
+            </CellStyle>
+          </RowStyle.FieldValueStyle>
+        </RowStyle>
+      </ListDataSectionStyleTemplate.GroupLevel2FooterAggregateStyle>
+      <ListDataSectionStyleTemplate.GroupLevel3FooterAggregateStyle>
+        <RowStyle Name="GroupLevel3FooterAggregateStyle">
+          <CellStyle Name="FieldCaptionStyle">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None" Top="Solid"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+          <RowStyle.FieldValueStyle>
+            <CellStyle Name="FieldValueStyle">
+              <BorderColor Name="BorderColor" Default="Black"/>
+              <BorderStyle Name="BorderStyle" Default="None" Top="Solid"/>
+              <BorderWidth Name="BorderWidth" Default="1pt"/>
+              <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+              <Padding Name="Padding"/>
+            </CellStyle>
+          </RowStyle.FieldValueStyle>
+        </RowStyle>
+      </ListDataSectionStyleTemplate.GroupLevel3FooterAggregateStyle>
+    </ListDataSectionStyleTemplate>
+    <CellStyle Name="FieldGroupCaptionStyle">
+      <BorderColor Name="BorderColor" Default="Black"/>
+      <BorderStyle Name="BorderStyle" Default="None"/>
+      <BorderWidth Name="BorderWidth" Default="1pt"/>
+      <Font Name="Font" FontFamily="Tahoma" FontWeight="Bold"/>
+      <Padding Name="Padding"/>
+    </CellStyle>
+    <RowStyle Name="GrandTotalStyle">
+      <CellStyle Name="FieldCaptionStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+        <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+        <Padding Name="Padding"/>
+      </CellStyle>
+      <RowStyle.FieldValueStyle>
+        <CellStyle Name="FieldValueStyle">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+      </RowStyle.FieldValueStyle>
+    </RowStyle>
+    <SectionStyle Name="ListSectionStyle">
+      <BorderColor Name="BorderColor" Default="Black"/>
+      <BorderStyle Name="BorderStyle" Default="None"/>
+      <BorderWidth Name="BorderWidth" Default="1pt"/>
+    </SectionStyle>
+    <ListStyleTemplate.FieldStyle>
+      <RowStyle Name="FieldStyle">
+        <CellStyle Name="FieldCaptionStyle">
+          <BorderColor Name="BorderColor" Default="Black"/>
+          <BorderStyle Name="BorderStyle" Default="None"/>
+          <BorderWidth Name="BorderWidth" Default="1pt"/>
+          <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+          <Padding Name="Padding"/>
+        </CellStyle>
+        <RowStyle.FieldValueStyle>
+          <CellStyle Name="FieldValueStyle">
+            <BorderColor Name="BorderColor" Default="Black"/>
+            <BorderStyle Name="BorderStyle" Default="None"/>
+            <BorderWidth Name="BorderWidth" Default="1pt"/>
+            <Font Name="Font" FontFamily="Tahoma" FontSize="8pt"/>
+            <Padding Name="Padding"/>
+          </CellStyle>
+        </RowStyle.FieldValueStyle>
+      </RowStyle>
+    </ListStyleTemplate.FieldStyle>
+    <ListStyleTemplate.TitleStyle>
+      <CellStyle Name="TitleStyle">
+        <BorderColor Name="BorderColor" Default="Black"/>
+        <BorderStyle Name="BorderStyle" Default="None"/>
+        <BorderWidth Name="BorderWidth" Default="1pt"/>
+        <Font Name="Font" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+        <Padding Name="Padding"/>
+      </CellStyle>
+    </ListStyleTemplate.TitleStyle>
+    <TableListSpacing Name="Spacing"/>
+  </ListStyleTemplate>
+</Reports>

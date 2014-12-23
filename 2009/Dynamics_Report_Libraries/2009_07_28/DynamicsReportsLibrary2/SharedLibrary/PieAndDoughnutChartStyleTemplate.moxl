@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reports Version="1.0.0.0">
+  <PieDoughnutChartStyleTemplate Name="PieAndDoughnutChartStyleTemplate" Palette="Pastel">
+    <ChartAreaStyle Name="ChartAreaStyle" BackgroundColor="White">
+      <LineStyle Name="BorderStyle" Style="None"/>
+    </ChartAreaStyle>
+    <DataSeriesStyling Name="DataSeriesStyling">
+      <ChartAreaStyle Name="FillStyle">
+        <LineStyle Name="BorderStyle" Color="DarkGray" Width="0.25pt"/>
+      </ChartAreaStyle>
+      <LineStyle Name="LineStyle" Color="DarkGray" Width="0.25pt"/>
+    </DataSeriesStyling>
+    <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White" Layout="Columns" Position="RightCenter">
+      <LineStyle Name="BorderStyle" Color="Black" Style="None"/>
+      <Font Name="FontStyle" FontFamily="Tahoma" FontSize="8pt"/>
+    </LegendStyleTemplate>
+    <PieDoughnutChartStyleTemplate.PlotAreaStyle>
+      <ChartAreaStyle Name="PlotAreaStyle" BackgroundColor="White">
+        <LineStyle Name="BorderStyle" Style="None"/>
+      </ChartAreaStyle>
+    </PieDoughnutChartStyleTemplate.PlotAreaStyle>
+    <PointLabelStyling Name="PointLabelStyling" Position="Center">
+      <Font Name="LabelStyle" FontFamily="Tahoma" FontSize="8pt"/>
+    </PointLabelStyling>
+    <ThreeDStyling Name="ThreeDStyling"/>
+    <Font Name="TitleStyle" FontFamily="Tahoma" FontSize="8pt" FontWeight="Bold"/>
+  </PieDoughnutChartStyleTemplate>
+</Reports>

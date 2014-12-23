@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reports Version="1.0.0.0">
+  <Report Name="Report1">
+    <DataMethod Name="DataMethod_Series_1" ReturnType="System.Data.DataTable"/>
+    <DataMethod Name="DataMethod_Series_0" ReturnType="System.Data.DataTable"/>
+    <DataSet Name="Dataset0" DataSourceType="BusinessLogic" Query="DataMethod_Series_0">
+      <DataSetField Name="NumWidgets" Alias="NumWidgets" Caption="Report1_Dataset0_NumWidgets" DataType="System.Double" UserDefined="False"/>
+      <DataSetParameter Name="AX_CompanyName" Alias="AX_CompanyName" DataType="System.String" Parameter="AX_CompanyName(Parameters)"/>
+    </DataSet>
+    <DataSet Name="Dataset0_columnchart" DataSourceType="BusinessLogic" DefaultLayout="ColumnChart" Query="DataMethod_Series_1">
+      <DataSetField Name="Index" Alias="Index" Caption="Report1_Dataset0_columnchart_Index" DataType="System.Int32" FieldType="Grouping" UserDefined="False"/>
+      <DataSetField Name="NumWidgets" Alias="NumWidgets" Caption="Report1_Dataset0_NumWidgets" DataType="System.Int32" UserDefined="False"/>
+      <DataSetParameter Name="AX_CompanyName" Alias="AX_CompanyName" DataType="System.String" Parameter="AX_CompanyName(Parameters)"/>
+    </DataSet>
+    <AutoDesign Name="AutoDesign0" LayoutTemplate=":ReportLayoutStyleTemplate">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <Table Name="Dataset0Table" DataSet="Dataset0(DataSets)" StyleTemplate=":TableStyleTemplate" Title="Dataset0">
+        <TableData Name="Data">
+          <TableDetailData Name="NumWidgets" Caption="=Labels!Report1_Dataset0_NumWidgets" Expression="=Fields!NumWidgets.Value">
+            <Aggregation Name="Aggregation"/>
+            <Padding Name="Padding"/>
+          </TableDetailData>
+        </TableData>
+      </Table>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <AutoDesign Name="AutoDesign1" LayoutTemplate=":ReportLayoutStyleTemplate">
+      <AutoDesign.PageSize>
+        <Size Name="PageSize" Height="11in" Width="8.5in"/>
+      </AutoDesign.PageSize>
+      <XYChart Name="Dataset0_columnchartXYChart" DataScaleMinValue="1E-07" DataSet="Dataset0_columnchart(DataSets)" StyleTemplate=":ColumnChartStyleTemplateCC" Title="Dataset0_columnchart">
+        <ChartData Name="NumWidgets" Caption="=Labels!Report1_Dataset0_NumWidgets" DisplayPointLabel="True" Expression="=Fields!NumWidgets.Value" Label="=Labels!Report1_Dataset0_NumWidgets" PointLabel="=Fields!NumWidgets.Value">
+          <DataSeriesStyling Name="DataSeriesStyle">
+            <ChartAreaStyle Name="FillStyle">
+              <LineStyle Name="BorderStyle"/>
+            </ChartAreaStyle>
+            <LineStyle Name="LineStyle"/>
+          </DataSeriesStyling>
+          <PointLabelStyling Name="PointLabelStyle">
+            <Font Name="LabelStyle"/>
+          </PointLabelStyling>
+        </ChartData>
+        <LegendStyleTemplate Name="LegendStyleTemplate" FillColor="White">
+          <LineStyle Name="BorderStyle" Color="Black"/>
+          <Font Name="FontStyle" FontSize="8pt"/>
+        </LegendStyleTemplate>
+        <Size Name="Size" Height="5in" Width="7in"/>
+        <ThreeDStyling Name="ThreeDStyling"/>
+        <XYChart.Categories>
+          <ChartGrouping Name="Index" Caption="=Labels!Report1_Dataset0_columnchart_Index" Label="=Fields!Index.Value">
+            <GroupOn Name="Index" Expression="=Fields!Index.Value"/>
+          </ChartGrouping>
+        </XYChart.Categories>
+      </XYChart>
+      <Size Name="InteractiveSize" Height="11in" Width="8.5in"/>
+      <Margin Name="Margin" Bottom=".5in" Left=".5in" Right=".5in" Top=".5in"/>
+      <SizeToFit Name="SizeToFit"/>
+    </AutoDesign>
+    <Parameter Name="AX_CompanyName" UserVisibility="Hidden"/>
+  </Report>
+</Reports>

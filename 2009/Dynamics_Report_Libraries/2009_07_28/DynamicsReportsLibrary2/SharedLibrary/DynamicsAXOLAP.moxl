@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reports Version="1.0.0.0">
+  <ExternalDataSource Name="DynamicsAXOLAP" ConnectionString="Provider=&quot;MSOLAP&quot;;Data source=localhost;Initial Catalog=&quot;Dynamics AX&quot;;Integrated Security=SSPI"/>
+</Reports>
